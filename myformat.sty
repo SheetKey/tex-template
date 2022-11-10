@@ -30,7 +30,7 @@
 % mdframed takes parameters (1) optional title; (2) name (i.e. "Theorem", "Lemma", etc.);
 % (3) color; (4) title font type;
 \newenvironment{mymdframed}[4][]{
-  \stepcounter{subsection}
+  \refstepcounter{subsection}
   \ifstrempty{#1}
   {
     \mdfsetup{
